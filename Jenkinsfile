@@ -1,12 +1,12 @@
 pipeline {
     agent any
     tools {
-        maven 'maven'        ### maven is configured as under global tool configuration 
-        jdk 'zulu8'          ##  zulu8 is configured as jdk under global tool configuration 
+        maven 'maven'        // maven is configured as under global tool configuration 
+        jdk 'zulu8'          //  zulu8 is configured as jdk under global tool configuration 
     }
     environment{
-        PATH = "/opt/maven/apache-maven-3.8.7/bin:$PATH"   ### check in jenkins system
-		HOME = "${env.WORKSPACE}"                  ### check in jenkins system
+        PATH = "/opt/maven/apache-maven-3.8.7/bin:$PATH"   // check in jenkins system
+		HOME = "${env.WORKSPACE}"                  // check in jenkins system
     }
 
     stages {
